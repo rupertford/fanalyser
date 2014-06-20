@@ -32,7 +32,7 @@ class CodeAnalysis(object):
         if self._directory_info == []:
             return result + " no directory information specified."
         for idx, dir_info in enumerate(self._directory_info):
-            result += "    directory "+str(idx+1)+"\n"
+            result += "    directory "+str(idx+1) + "\n"
             result += "        path=" + dir_info["directory"] + "\n"
             result += "        included files=" + \
                       str(dir_info["included_files"]) \
@@ -66,7 +66,7 @@ class CodeAnalysis(object):
                               "."
         :type excluded_dirs: list of regexps
         '''
-        dir_map={}
+        dir_map = {}
         dir_map["directory"] = my_directory
         dir_map["depth"] = recurse_depth
         dir_map["included_files"] = included_files
