@@ -86,7 +86,10 @@ class CodeAnalysis(object):
         ''' Parse all of the matched files, print out the path of each one and
             whether the parsing was successful. Print a summary at the end. By
             default also link calls and subroutines together'''
-        from walkdir import filtered_walk, file_paths
+        try:
+            from walkdir import filtered_walk, file_paths
+        except ImportError:
+            raise RuntimeError("CodeAnalysis requires walkdir <http://walkdir.readthedocs.org/en/latest/#obtaining-the-module> to be installed")
         for dir_info in self._directory_info:
             files = file_paths(filtered_walk(dir_info["directory"],
                                    included_files = dir_info["included_files"],
