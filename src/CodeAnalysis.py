@@ -1,16 +1,17 @@
-''' Fortran Code Analyser 0.2. This version provides filters to allow the user
-    to specify the directories and files. It then parses and analyses these
-    files building up an internal hierarchy of subroutines and calls. The
-    subroutines and calls are then linked together and a call tree returned
-    using the dot graph format.
-
-    *** 0.2, when complete, will return a call tree using dot. Currently just creates and links the basic objects ***
+'''Fortran Code Analyser 0.2. This version provides filters to allow
+    the user to specify the directories and files. It then parses and
+    analyses these files building up an internal hierarchy of
+    subroutines and calls. The analysis provides some basic
+    information about the code in terms of number of subroutine, lines
+    of code etc. The subroutines and calls are then linked
+    together. The linking allows a separate call method to return the
+    call tree using the dot graph format.
 
     Makes use of the
     `walkdir <http://walkdir.readthedocs.org/en/latest/#obtaining-the-module>`_
     module and requires it to be installed. The tested version is 0.3.
 
-    Makes use of the parser in f2py (more info here ***)
+    Makes use of the parser in `f2py <http://code.google.com/p/f2py>`_
 
     Funded by the EU FP7 `ISENES2 <https://verc.enes.org/ISENES2>`_ project.
 
@@ -23,8 +24,8 @@
     >>> c = CodeAnalysis()
     >>> c.add_directory("/home/rupert/proj/jules")
     >>> print c
-    >>> c.analyse()
-    >>> c.call_tree()
+    >>> parsed = c.parse()
+
 '''
 
 class CodeAnalysis(object):
@@ -34,7 +35,6 @@ class CodeAnalysis(object):
     def __init__(self):
         self._directory_info = []
         self._files=[]
-        self._symbol_table={}
 
     def __str__(self):
         result = "CodeAnalysis:\n"
@@ -82,7 +82,7 @@ class CodeAnalysis(object):
         dir_map["excluded_dirs"] = excluded_dirs
         self._directory_info.append(dir_map)
 
-    def analyse(self,link=True):
+    def parse(self, link = False):
         ''' Parse all of the matched files, print out the path of each one and
             whether the parsing was successful. Print a summary at the end. By
             default also link calls and subroutines together'''
@@ -114,15 +114,54 @@ class CodeAnalysis(object):
                     print "[{0}/{1}][failed] {2}".format(idx + 1,
                                                          len(list_files),
                                                          file_path)
-            print "{0} out of {1} files successfully parsed". \
+            print "{0} out of {1} files successfully examined". \
                   format(str(success), str(len(list_files)))
-        if link:
-            self.link()
-               
-    def link(self):
+        return self._files
+
+class CodeAnalysisUtilBase(object):
+
+    @property
+    def name(self):
+        raise NotImplementedError, "name method should be implemented"
+
+    @property
+    def description(self):
+        raise NotImplementedError, "description method should be implemented"
+
+class CodeAnalysisTransform(CodeAnalysisUtilBase):
+
+    def transform(self,files):
+        raise NotImplementedError, "transform method should be implemented"
+        return files
+
+class CodeAnalysisOperator(CodeAnalysisUtilBase):
+
+    def apply(self,files):
+        raise NotImplementedError, "apply method should be implemented"
+
+
+class Link(CodeAnalysisTransform):
+
+    def __init__(self):
+        self._symbol_table={}
+        self._files=None
+
+    @property
+    def name(self):
+        return "link"
+
+    @property
+    def description(self):
+        return "links calls and subroutines. Modifies the files object to add link information."
+
+    def transform(self,files):
+
+        print "linking:",
+        self._files=files
+
+        # create the symbol table
         for my_file in self._files:
             for subroutine in my_file.subroutines:
-                # TODO: check for same symbol more than once?
                 self._symbol_table[subroutine.name.lower()]=subroutine
 
         for my_file in self._files:
@@ -132,15 +171,137 @@ class CodeAnalysis(object):
                         my_subroutine=self._symbol_table[call.name.lower()]
                         call.link=my_subroutine
                         my_subroutine.add_link(call)
-        print "link complete"
 
-    def call_tree(self):
+        print "done"
+        return files
+
+    def dot(self,sub_name=""):
+
+        if self._files is None:
+            raise RuntimeError, "run the apply method first"
+
+        if sub_name not in self._symbol_table:
+            raise RuntimeError, "specified subroutine is not in the code"
+
         ''' return the call tree as a dot file '''
-        print "digraph G {"
-        for my_file in self._files:
-            for subroutine in my_file.subroutines:
-                subroutine.call_tree()
-        print "}"
+        if sub_name == "":
+            print "digraph G {"
+            for my_file in self._files:
+                for subroutine in my_file.subroutines:
+                    subroutine.call_tree()
+            print "}"
+        else:
+            print "digraph G {"
+            self._x(self._symbol_table[sub_name],[])
+            print "}"
+
+    def _x(self, subroutine, called_names):
+        subroutine.call_tree()
+        for call in subroutine.calls:
+            if call.name not in called_names:
+                called_names.append(call.name)
+                if call.link is not None:
+                    self._x(call.link, called_names)
+
+    def info(self):
+        # TBD info about orphans and unresolved calls
+        pass
+
+class Stats(CodeAnalysisOperator):
+
+    def __init__(self):
+        self._n_files_ok = 0
+        self._n_files_empty = 0
+        self._n_files_failed = 0
+        self._n_modules = 0
+        self._n_modules_no_subroutines = 0
+        self._n_subroutines_outside_modules = 0
+        self._n_subroutines_in_modules = 0
+        self._n_statements = 0
+        self._statement_count_bin = {}
+        self._applied = False
+        self._n_comments = 0
+        self._n_type_decls = 0
+        self._n_code_statements = 0
+
+    @property
+    def name(self):
+        return "Statistics"
+
+    @property
+    def description(self):
+        return "Statistics about the code"
+
+    def apply(self,files):
+        ''' determine stats about the code '''
+
+        print "Creating stats:",
+        import sys
+        sys.stdout.flush()
+        for my_file in files:
+            if not my_file.parsed_ok:
+                self._n_files_failed += 1            
+            else:
+                self._n_files_ok += 1
+                if my_file.is_empty:
+                    self._n_files_empty += 1
+                else:
+                    self._n_modules += len(my_file.modules)
+                    self._n_subroutines_outside_modules += len(my_file.subroutines)
+                    for my_module in my_file.modules:
+                        if len(my_module.subroutines) == 0:
+                            self._n_modules_no_subroutines += 1
+                        else:
+                            self._n_subroutines_in_modules += len(my_module.subroutines)
+
+                    # walk through all statements in the current file
+                    from fparser import api
+                    for statement, depth in api.walk(my_file._ast, -1):
+                        self._n_statements += 1
+                        type_statement = type(statement)
+                        if type_statement not in self._statement_count_bin:
+                            self._statement_count_bin[type_statement] = 1
+                        else:
+                            self._statement_count_bin[type_statement] += 1
+                        if "fparser.statements.Comment" in str(type_statement):
+                            self._n_comments += 1
+                        elif "fparser.typedecl_statements." in str(type_statement):
+                            self._n_type_decls += 1
+                        elif "fparser.statements." in str(type_statement) or "fparser.block_statements." in str(type_statement):
+                            self._n_code_statements += 1
+        self._applied=True
+        print "done"
+        sys.stdout.flush()
+
+    @property
+    def info(self):
+        if not self._applied:
+            raise RuntimeError("method info must be called first")
+
+        print "Total number of ..."
+        print "    files                       {0}".format(self._n_files_ok + self._n_files_failed)
+        print "    files successfully parsed   {0}".format(self._n_files_ok-self._n_files_empty)
+        print "    files failed to parse       {0}".format(self._n_files_failed)
+        print "    files that are empty        {0}".format(self._n_files_empty)
+        print ""
+        # TBD print "    programs              {0}".format(0)
+        print "    modules                     {0}".format(self._n_modules)
+        print "    modules with subroutines    {0}".format(self._n_modules - self._n_modules_no_subroutines)
+        print "    modules without subroutines {0}".format(self._n_modules_no_subroutines)
+        print ""
+        print "    subroutines                 {0}".format(self._n_subroutines_outside_modules+self._n_subroutines_in_modules)
+        print "    subroutines outside modules {0}".format(self._n_subroutines_outside_modules)
+        print "    subroutines inside modules  {0}".format(self._n_subroutines_in_modules)
+        print ""
+        print "    statements                  {0}".format(self._n_statements)
+        print "    comments                    {0}".format(self._n_comments)
+        print "    declarations                {0}".format(self._n_type_decls)
+        print "    code statements             {0}".format(self._n_code_statements)
+        print ""
+        print "   ",
+        for statement in sorted(self._statement_count_bin, key=self._statement_count_bin.__getitem__, reverse = True):
+            print str(statement).split("'")[1].split(".")[2],self._statement_count_bin[statement],
+        print ""
 
 class File(object):
     ''' a class containing information about a particular fortran file '''
@@ -151,10 +312,35 @@ class File(object):
         self._ast=None
         self._parsed=False
         self._parsed_ok=None
+        self._is_empty=False
+
+    @property
+    def parsed(self):
+        return self._parsed
+
+    @property
+    def is_empty(self):
+        if not self._parsed:
+            raise RuntimeError("Error")
+        return self._is_empty
+
+    @property
+    def parsed_ok(self):
+        if not self._parsed:
+            raise RuntimeError("Error")
+        return self._parsed_ok
 
     @property
     def subroutines(self):
+        if not self._parsed:
+            raise RuntimeError("Error")
         return self._subroutines
+
+    @property
+    def modules(self):
+        if not self._parsed:
+            raise RuntimeError("Error")
+        return self._modules
 
     def parse(self,file_path):
         ''' parse the file provided using fparser '''
@@ -193,12 +379,15 @@ class File(object):
 
         found=False
         for child in self._ast.content:
-            # TODO: look for function too
             if isinstance(child,fparser.block_statements.Program):
                 found=True
                 #print "  FOUND MAIN PROGRAM", child.name
             if isinstance(child,fparser.block_statements.Module):
                 found=True
+                my_module=Module()
+                my_module.parse(child)
+                my_module.analyse()
+                self._modules.append(my_module)
                 #print "  FOUND MODULE", child.name
             if isinstance(child,fparser.block_statements.Subroutine):
                 found=True
@@ -214,17 +403,29 @@ class File(object):
                 #print "  FOUND BLOCK DATA", child.name
         if not found:
             print "Analysis found nothing in the file."
+            self._is_empty=True
 
 
 class Module(object):
     def __init__(self):
         self._subroutines=[] # a list of subroutines contained in this module
 
+    @property
+    def subroutines(self):
+        return self._subroutines
+
     def parse(self,ast):
         self._ast=ast
 
     def analyse(self):
-        pass
+        from fparser import api
+        import fparser
+        for stmt, depth in api.walk(self._ast, -1):
+            if isinstance(stmt,fparser.block_statements.Subroutine):
+                my_subroutine=Subroutine()
+                my_subroutine.parse(stmt)
+                my_subroutine.analyse()
+                self._subroutines.append(my_subroutine)
     
 class Subroutine(object):
     def __init__(self):
@@ -235,7 +436,6 @@ class Subroutine(object):
         self._ast=ast
 
     def analyse(self):
-        pass
         from fparser import api
         import fparser
         for stmt, depth in api.walk(self._ast, -1):
