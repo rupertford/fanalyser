@@ -180,7 +180,7 @@ class Link(CodeAnalysisTransform):
         if self._files is None:
             raise RuntimeError, "run the apply method first"
 
-        if sub_name not in self._symbol_table:
+        if sub_name not in self._symbol_table and sub_name != "":
             raise RuntimeError, "specified subroutine is not in the code"
 
         ''' return the call tree as a dot file '''
@@ -189,6 +189,9 @@ class Link(CodeAnalysisTransform):
             for my_file in self._files:
                 for subroutine in my_file.subroutines:
                     subroutine.call_tree()
+                for module in my_file.modules:
+                    for subroutine in module.subroutines:
+                        subroutine.call_tree()
             print "}"
         else:
             print "digraph G {"
@@ -371,45 +374,47 @@ class File(object):
         ''' Creates program, module function and/or subroutine objects as
             appropriate '''
         import fparser
+        from fparser import api
 
         if not self._parsed:
             raise RuntimeError("Cannot analyse when you have not yet parsed")
         if not self._parsed_ok:
             raise RuntimeError("Cannot analyse when the parsing failed")
 
-        found=False
-        for child in self._ast.content:
+        if len(self._ast.content)==0:
+            print "Analysis found nothing in the file."
+            self._is_empty=True
+            return
+
+        for child, depth in api.walk(self._ast, -1):
             if isinstance(child,fparser.block_statements.Program):
-                found=True
+                pass
                 #print "  FOUND MAIN PROGRAM", child.name
             if isinstance(child,fparser.block_statements.Module):
-                found=True
                 my_module=Module()
                 my_module.parse(child)
                 my_module.analyse()
                 self._modules.append(my_module)
                 #print "  FOUND MODULE", child.name
             if isinstance(child,fparser.block_statements.Subroutine):
-                found=True
                 my_subroutine=Subroutine()
                 my_subroutine.parse(child)
                 my_subroutine.analyse()
                 self._subroutines.append(my_subroutine)
             if isinstance(child,fparser.block_statements.Function):
-                found=True
+                pass
                 #print "  FOUND FUNCTION", child.name
             if isinstance(child,fparser.block_statements.BlockData):
-                found=True
+                pass
                 #print "  FOUND BLOCK DATA", child.name
-        if not found:
-            print "Analysis found nothing in the file."
-            self._is_empty=True
-
 
 class Module(object):
     def __init__(self):
         self._subroutines=[] # a list of subroutines contained in this module
 
+    @property
+    def name(self):
+        return self._ast.name
     @property
     def subroutines(self):
         return self._subroutines

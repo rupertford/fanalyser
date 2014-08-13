@@ -1,0 +1,414 @@
+CodeAnalysis:
+    directory 1
+        path=/home/rupert/proj/isenes2/nemo_3.4_ppsrc
+        included files=['*.f90', '*.f']
+        excluded dirs=['.*']
+        recursion depth='unlimited'
+
+Found 243 matching files in directory '/home/rupert/proj/isenes2/nemo_3.4_ppsrc'
+[1/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioipsl/nc4interface.f90
+[2/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/mpitrace.f90
+[3/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/mpi_wrapper.f90
+[4/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/mod_ioserver_para.f90
+[5/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/server.f90
+[6/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/mod_ioclient_para.f90
+[7/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/mpi_mod.f90
+[8/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/ioserver/mod_mpi_buffer_client.f90
+[9/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_read_prof.f90
+[10/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_muscl.f90
+[11/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcapr.f90
+[12/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynzad.f90
+[13/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcvol.f90
+[14/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdtra.f90
+[15/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdvor.f90
+[16/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sshwzv.f90
+[17/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_sort.f90
+[18/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traldf.f90
+[19/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/in_out_manager.f90
+[20/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/step_oce.f90
+[21/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynspg_oce.f90
+[22/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/floblk.f90
+[23/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcwave.f90
+[24/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/solpcg.f90
+[25/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/nemogcm.f90
+[26/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfkpp.f90
+[27/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_mpp.f90
+[28/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trazdf.f90
+[29/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/stpctl.f90
+[30/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdftke.f90
+[31/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfric.f90
+[32/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/c1d.f90
+[33/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcrnf.f90
+[34/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domwri.f90
+[35/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfddm.f90
+[36/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_sst_io.f90
+[37/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/flowri.f90
+[38/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/fldread.f90
+[39/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/iom_nf90.f90
+[40/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcblk_clio.f90
+[41/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/cpl_oasis3.f90
+[42/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/iom_def.f90
+[43/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_read_seaice.f90
+[44/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dom_oce.f90
+[45/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dommsk.f90
+[46/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traldf_lap.f90
+[47/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdmld_oce.f90
+[48/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_readmdt.f90
+[49/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdytides.f90
+[50/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynbfr.f90
+[51/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/wrk_nemo.f90
+[52/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diadct.f90
+[53/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_muscl2.f90
+[54/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_inter_sup.f90
+[55/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_write.f90
+[56/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/iom.f90
+[57/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdmld_rst.f90
+[58/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/ldftra_oce.f90
+[59/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_sla_types.f90
+[60/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traqsr.f90
+[61/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdydyn.f90
+[62/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/lbclnk.f90
+[63/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynadv.f90
+[64/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_grid.f90
+[65/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcini.f90
+[66/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynzdf_imp.f90
+[67/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/flo4rk.f90
+[68/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_prep.f90
+[69/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdmod_trc.f90
+[70/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diaharm.f90
+[71/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_profiles.f90
+[72/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdicp.f90
+[73/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_const.f90
+[74/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/phycst.f90
+[75/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcice_lim.f90
+[76/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/florst.f90
+[77/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trasbc.f90
+[78/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynnxt_c1d.f90
+[79/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/ldfeiv.f90
+[80/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdy_par.f90
+[81/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynnxt.f90
+[82/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdydyn2d.f90
+[83/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcdyn.f90
+[84/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trazdf_exp.f90
+[85/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_read_vel.f90
+[86/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obc_par.f90
+[87/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/tranpc.f90
+[88/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdftmx.f90
+[89/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diawri.f90
+[90/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfevd.f90
+[91/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcmod.f90
+[92/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/ldfslp.f90
+[93/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/prtctl.f90
+[94/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdydta.f90
+[95/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/divcur.f90
+[96/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/closea.f90
+[97/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynzdf_exp.f90
+[98/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcfwb.f90
+[99/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zpshde.f90
+[100/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diafwb.f90
+[101/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdvor_oce.f90
+[102/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynzdf.f90
+[103/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_eiv.f90
+[104/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_profiles_def.f90
+[105/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domhgr.f90
+[106/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcrst.f90
+[107/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/mpp_map.f90
+[108/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/geo2ocean.f90
+[109/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obctra.f90
+[110/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/solver.f90
+[111/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdicp_oce.f90
+[112/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdyini.f90
+[113/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trabbc.f90
+[114/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domstp.f90
+[115/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/solmat.f90
+[116/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynadv_ubs.f90
+[117/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbc_oce.f90
+[118/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dyncor_c1d.f90
+[119/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sol_oce.f90
+[120/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynldf_iso.f90
+[121/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdyvol.f90
+[122/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/restart.f90
+[123/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/step.f90
+[124/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_sst.f90
+[125/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_prof_io.f90
+[126/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/ldfdyn.f90
+[127/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/tranxt.f90
+[128/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfbfr.f90
+[129/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_conv.f90
+[130/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynnept.f90
+[131/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/mppini.f90
+[132/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfgls.f90
+[133/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_inter_z1d.f90
+[134/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/flo_oce.f90
+[135/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_oper.f90
+[136/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv.f90
+[137/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdydyn3d.f90
+[138/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/eosbn2.f90
+[139/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdmod.f90
+[140/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbc_ice.f90
+[141/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dianam.f90
+[142/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfmxl.f90
+[143/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obc_oce.f90
+[144/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynspg.f90
+[145/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/iom_ioipsl.f90
+[146/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdmld.f90
+[147/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/lbcnfd.f90
+[148/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domngb.f90
+[149/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcdta.f90
+[150/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/ldfdyn_oce.f90
+[151/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/iom_rstdimg.f90
+[152/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynkeg.f90
+[153/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_rot_vel.f90
+[154/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/ldftra.f90
+[155/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/daymod.f90
+[156/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traldf_iso_grif.f90
+[157/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domain.f90
+[158/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_types.f90
+[159/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traldf_bilap.f90
+[160/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcflx.f90
+[161/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynldf.f90
+[162/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domzgr.f90
+[163/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domvvl.f90
+[164/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynspg_ts.f90
+[165/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/lib_fortran.f90
+[166/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_read_sst.f90
+[167/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcdcy.f90
+[168/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdytra.f90
+[169/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynspg_flt.f90
+[170/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trdmod_oce.f90
+[171/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcssr.f90
+[172/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/step_c1d.f90
+[173/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_inter_h2d.f90
+[174/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/istate.f90
+[175/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diahsb.f90
+[176/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcice_cice.f90
+[177/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynvor.f90
+[178/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_vel_io.f90
+[179/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_ubs.f90
+[180/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traldf_iso.f90
+[181/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diahth.f90
+[182/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynadv_cen2.f90
+[183/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcfla.f90
+[184/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/par_oce.f90
+[185/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/tide_mod.f90
+[186/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynhpg.f90
+[187/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/flodom.f90
+[188/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_seaice.f90
+[189/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/timing.f90
+[190/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_surf_def.f90
+[191/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diadimg.f90
+[192/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_seaice_io.f90
+[193/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/updtide.f90
+[194/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/julian.f90
+[195/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_cen2.f90
+[196/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/albedo.f90
+[197/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/asminc.f90
+[198/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynldf_bilap.f90
+[199/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dtatsd.f90
+[200/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_qck.f90
+[201/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/solsor.f90
+[202/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/cla.f90
+[203/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcana.f90
+[204/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcrad.f90
+[205/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_sla.f90
+[206/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_read_altbias.f90
+[207/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcice_if.f90
+[208/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdf_oce.f90
+[209/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obcdyn_bt.f90
+[210/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_fbm.f90
+[211/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbccpl.f90
+[212/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcssm.f90
+[213/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_utils.f90
+[214/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/par_kind.f90
+[215/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traldf_bilapg.f90
+[216/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdyice_lim2.f90
+[217/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_sla_io.f90
+[218/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynldf_lap.f90
+[219/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/bdy_oce.f90
+[220/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcblk_mfs.f90
+[221/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trc_oce.f90
+[222/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/obs_read_sla.f90
+[223/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/oce.f90
+[224/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/traadv_tvd.f90
+[225/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynspg_exp.f90
+[226/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcice_lim_2.f90
+[227/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/floats.f90
+[228/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/lib_mpp.f90
+[229/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/tradmp.f90
+[230/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diaar5.f90
+[231/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/dynldf_bilapg.f90
+[232/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/asmtrj.f90
+[233/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbctide.f90
+[234/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trazdf_imp.f90
+[235/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/oasis4_date.f90
+[236/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/sbcblk_core.f90
+[237/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diaptr.f90
+[238/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/asmpar.f90
+[239/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/zdfini.f90
+[240/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/trabbl.f90
+[241/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/cpl_oasis4.f90
+[242/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/domcfg.f90
+[243/243][ok] /home/rupert/proj/isenes2/nemo_3.4_ppsrc/nemo/diaobs.f90
+243 out of 243 files successfully examined
+Creating stats: done
+Total number of ...
+    files                       243
+    files successfully parsed   243
+    files failed to parse       0
+    files that are empty        0
+
+    modules                     241
+    modules with subroutines    203
+    modules without subroutines 38
+
+    subroutines                 1189
+    subroutines outside modules 595
+    subroutines inside modules  594
+
+    statements                  76171
+    comments                    36098
+    declarations                5789
+    code statements             34284
+
+    Comment 36098 Assignment 10635 Call 3799 Integer 2809 Write 2416 EndDo 2238 Do 2238 If 2191 IfThen 2026 EndIfThen 2026 Real 1787 Use 1679 Subroutine 595 EndSubroutine 595 Else 564 Case 483 Character 436 Logical 375 Allocate 305 Public 250 Module 241 EndModule 241 Contains 214 Implicit 201 Type 181 Private 154 ElseIf 139 EndSelect 130 Select 130 Deallocate 105 Cycle 94 PointerAssignment 81 Read0 76 Function 68 EndFunction 68 Where 44 Rewind 42 Namelist 42 Return 40 Format 38 Exit 36 EndInterface 30 Interface 30 ModuleProcedure 30 Where 22 EndWhere 22 Close 19 EndType 18 Type 18 ElseWhere 15 Continue 11 Print 9 Data 7 Inquire 7 Open 6 Goto 6 Save 4 Stop 4 Program 1 Sequence 1 EndProgram 1 
+linking: done
+digraph G {
+sbc -> timing_start;
+sbc -> sbc_apr;
+sbc -> sbc_ssm;
+sbc -> sbc_wave;
+sbc -> sbc_gyre;
+sbc -> sbc_ana;
+sbc -> sbc_flx;
+sbc -> sbc_blk_clio;
+sbc -> sbc_blk_core;
+sbc -> sbc_cpl_rcv;
+sbc -> sbc_blk_mfs;
+sbc -> sbc_ice_if;
+sbc -> sbc_ice_lim_2;
+sbc -> bdy_ice_lim_2;
+sbc -> sbc_ice_lim;
+sbc -> sbc_ice_cice;
+sbc -> sbc_rnf;
+sbc -> sbc_ssr;
+sbc -> sbc_fwb;
+sbc -> sbc_clo;
+sbc -> prt_ctl;
+sbc -> sbc_final;
+sbc -> timing_stop;
+timing_start -> timing_ini_var;
+sbc_apr -> ctl_stop;
+sbc_apr -> fld_fill;
+sbc_apr -> fld_read;
+ctl_stop -> mppstop;
+mppstop -> mppsync;
+fld_read -> fld_init;
+fld_read -> wgt_print;
+fld_read -> fld_rot;
+fld_read -> fld_rec;
+fld_read -> fld_clopn;
+fld_read -> ctl_warn;
+fld_read -> fld_get;
+fld_read -> iom_close;
+fld_init -> ctl_stop;
+fld_init -> fld_rec;
+fld_init -> fld_clopn;
+fld_init -> ctl_warn;
+fld_init -> fld_get;
+fld_init -> iom_close;
+fld_clopn -> iom_close;
+fld_clopn -> iom_open;
+iom_close -> iom_ioipsl_close;
+iom_close -> iom_nf90_close;
+iom_close -> iom_rstdimg_close;
+iom_close -> ctl_stop;
+iom_nf90_close -> iom_nf90_check;
+iom_nf90_check -> ctl_stop;
+iom_rstdimg_close -> ctl_stop;
+iom_open -> ctl_stop;
+iom_open -> iom_ioipsl_open;
+iom_open -> iom_nf90_open;
+iom_open -> iom_rstdimg_open;
+iom_ioipsl_open -> ctl_stop;
+iom_nf90_open -> iom_nf90_check;
+iom_nf90_open -> get_nf90_symbol;
+iom_nf90_open -> ctl_stop;
+iom_rstdimg_open -> ctl_stop;
+fld_get -> fld_map;
+fld_get -> wgt_list;
+fld_get -> fld_interp;
+wgt_list -> fld_weight;
+fld_weight -> ctl_stop;
+fld_weight -> iom_open;
+fld_weight -> iom_close;
+fld_rot -> rot_rep;
+rot_rep -> angle;
+rot_rep -> ctl_stop;
+angle -> ctl_stop;
+sbc_wave -> ctl_stop;
+sbc_wave -> fld_fill;
+sbc_wave -> fld_read;
+sbc_flx -> ctl_stop;
+sbc_flx -> fld_fill;
+sbc_flx -> fld_read;
+sbc_blk_clio -> ctl_stop;
+sbc_blk_clio -> fld_fill;
+sbc_blk_clio -> fld_read;
+sbc_blk_clio -> blk_oce_clio;
+blk_oce_clio -> timing_start;
+blk_oce_clio -> blk_clio_qsr_oce;
+blk_oce_clio -> prt_ctl;
+blk_oce_clio -> timing_stop;
+blk_clio_qsr_oce -> timing_start;
+blk_clio_qsr_oce -> flx_blk_declin;
+blk_clio_qsr_oce -> timing_stop;
+sbc_blk_core -> ctl_stop;
+sbc_blk_core -> ctl_warn;
+sbc_blk_core -> fld_fill;
+sbc_blk_core -> fld_read;
+sbc_blk_core -> blk_oce_core;
+blk_oce_core -> timing_start;
+blk_oce_core -> turb_core_2z;
+blk_oce_core -> turb_core_1z;
+blk_oce_core -> prt_ctl;
+blk_oce_core -> timing_stop;
+turb_core_2z -> timing_start;
+turb_core_2z -> timing_stop;
+turb_core_1z -> timing_start;
+turb_core_1z -> timing_stop;
+sbc_blk_mfs -> timing_start;
+sbc_blk_mfs -> ctl_warn;
+sbc_blk_mfs -> ctl_stop;
+sbc_blk_mfs -> fld_fill;
+sbc_blk_mfs -> fld_read;
+sbc_blk_mfs -> fluxes_mfs;
+sbc_blk_mfs -> timing_stop;
+fluxes_mfs -> timing_start;
+fluxes_mfs -> qshort;
+fluxes_mfs -> turb_core_2z;
+fluxes_mfs -> timing_stop;
+sbc_ice_if -> ctl_stop;
+sbc_ice_if -> fld_fill;
+sbc_ice_if -> fld_read;
+sbc_rnf -> sbc_rnf_init;
+sbc_rnf -> fld_read;
+sbc_rnf_init -> ctl_stop;
+sbc_rnf_init -> ctl_warn;
+sbc_rnf_init -> fld_fill;
+sbc_rnf_init -> iom_open;
+sbc_rnf_init -> iom_close;
+sbc_rnf_init -> rnf_mouth;
+rnf_mouth -> iom_open;
+rnf_mouth -> iom_close;
+rnf_mouth -> clo_rnf;
+sbc_ssr -> timing_start;
+sbc_ssr -> ctl_stop;
+sbc_ssr -> fld_fill;
+sbc_ssr -> fld_read;
+sbc_ssr -> timing_stop;
+sbc_fwb -> timing_start;
+sbc_fwb -> ctl_stop;
+sbc_fwb -> ctl_opn;
+sbc_fwb -> timing_stop;
+sbc_final -> cice_sbc_final;
+}

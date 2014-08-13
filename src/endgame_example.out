@@ -347,7 +347,6 @@ Analysis found nothing in the file.
 [304/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/interp_2_press_at_uv_pos_b_grid.f90
 [305/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/acumps.f90
 [306/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/ni_methox.f90
-Analysis found nothing in the file.
 [307/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/setcona_3a.f90
 [308/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/tstmsk.f90
 [309/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/time2sec.f90
@@ -470,12 +469,10 @@ Analysis found nothing in the file.
 Analysis found nothing in the file.
 [406/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/scm_shell.f90
 [407/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/atm_step_phys_init.f90
-Analysis found nothing in the file.
 [408/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/initial.f90
 [409/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/atm_fields_mod.f90
 [410/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/duplic.f90
 [411/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/setdiff.f90
-Analysis found nothing in the file.
 [412/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/atm_step_diag_3a.f90
 Analysis found nothing in the file.
 [413/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/control/top_level/atm_step_alloc.f90
@@ -617,7 +614,6 @@ Analysis found nothing in the file.
 [515/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/ancils/MCC_data.f90
 Analysis found nothing in the file.
 [516/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/ancils/TWPICE_data.f90
-Analysis found nothing in the file.
 [517/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/service/restore_conv.f90
 Analysis found nothing in the file.
 [518/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/service/g05dde.f90
@@ -643,7 +639,6 @@ Analysis found nothing in the file.
 [528/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/service/g05cge.f90
 Analysis found nothing in the file.
 [529/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/service/g05cbe.f90
-Analysis found nothing in the file.
 [530/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/service/save_conv.f90
 Analysis found nothing in the file.
 [531/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/scm/modules/scmoptype_defn.f90
@@ -1006,21 +1001,18 @@ Analysis found nothing in the file.
 [845/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/amend_lookup_grid.f90
 [846/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/flux_process.f90
 [847/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/fieldsub.f90
-Analysis found nothing in the file.
 [848/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/open_flux_control_files.f90
 [849/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/moisture.f90
 [850/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/add_lookups.f90
 [851/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/scalarmult.f90
 [852/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/pressure.f90
 [853/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/h_int_lsm.f90
-Analysis found nothing in the file.
 [854/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/open_grid_control_files.f90
 [855/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/date13.f90
 [856/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/read_lsm_anc.f90
 [857/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/readhk-fprdhk.f90
 [858/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/climate_month_date.f90
 [859/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/set_climate_times.f90
-Analysis found nothing in the file.
 [860/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/read_field_sizes.f90
 [861/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/heat.f90
 [862/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/fluxproc/sea_ice.f90
@@ -1182,7 +1174,6 @@ Analysis found nothing in the file.
 [1014/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/qxfieldcos/read_write-fieldcos.f90
 [1015/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/qxfieldcos/readff-fieldcos.f90
 [1016/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/utility/qxfieldcos/cray_ieee.f90
-Analysis found nothing in the file.
 [1017/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/lbc_input/inbounda.f90
 Analysis found nothing in the file.
 [1018/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/lbc_input/set_lateral_boundaries-setlbc1a.f90
@@ -1690,7 +1681,6 @@ Analysis found nothing in the file.
 Analysis found nothing in the file.
 [1420/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/gravity_wave_drag/gw_block.f90
 [1421/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/gravity_wave_drag/gw_satn.f90
-Analysis found nothing in the file.
 [1422/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/gravity_wave_drag/g_wave5a.f90
 [1423/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/gravity_wave_drag/gw_vert.f90
 Analysis found nothing in the file.
@@ -1758,7 +1748,6 @@ Analysis found nothing in the file.
 [1468/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/convection/dts_w_variance.f90
 Analysis found nothing in the file.
 [1469/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/convection/tcs_calc_scales.f90
-Analysis found nothing in the file.
 [1470/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/convection/glue_conv-6a.f90
 [1471/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/convection/shallow_wql.f90
 [1472/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/convection/con_rad-conrad1a.f90
@@ -2253,7 +2242,6 @@ Analysis found nothing in the file.
 [1785/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/fastj_photoj.f90
 Analysis found nothing in the file.
 [1786/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/fastj_gaussp.f90
-Analysis found nothing in the file.
 [1787/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_wetdep.f90
 Analysis found nothing in the file.
 [1788/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_setup_indices.f90
@@ -2285,9 +2273,7 @@ Analysis found nothing in the file.
 [1801/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/fastj_solar2.f90
 Analysis found nothing in the file.
 [1802/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/fastj_specs.f90
-Analysis found nothing in the file.
 [1803/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_read_reff.f90
-Analysis found nothing in the file.
 [1804/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/asad_spmjpdriv.f90
 Analysis found nothing in the file.
 [1805/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_aero_ctl.f90
@@ -2331,7 +2317,6 @@ Analysis found nothing in the file.
 Analysis found nothing in the file.
 [1825/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_fdiss.f90
 [1826/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_radaer_precalc_mod.f90
-Analysis found nothing in the file.
 [1827/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_set_array_bounds.f90
 Analysis found nothing in the file.
 [1828/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_chem_strattrop.f90
@@ -2343,7 +2328,6 @@ Analysis found nothing in the file.
 [1831/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_chem_tropisop.f90
 Analysis found nothing in the file.
 [1832/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_surfddr.f90
-Analysis found nothing in the file.
 [1833/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/ukca_wdeprt.f90
 Analysis found nothing in the file.
 [1834/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/UKCA/asad_cinit.f90
@@ -2487,7 +2471,6 @@ Analysis found nothing in the file.
 [1905/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/givelon.f90
 Analysis found nothing in the file.
 [1906/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/setinit.f90
-Analysis found nothing in the file.
 [1907/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/getlon0.f90
 Analysis found nothing in the file.
 [1908/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/setlen.f90
@@ -2495,7 +2478,6 @@ Analysis found nothing in the file.
 [1909/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/c0fmt.f90
 Analysis found nothing in the file.
 [1910/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/arealat1.f90
-Analysis found nothing in the file.
 [1911/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/riv_intctl-riv_ic1a.f90
 Analysis found nothing in the file.
 [1912/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/river_routing/mmd2kgs.f90
@@ -3314,7 +3296,6 @@ Analysis found nothing in the file.
 [2474/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/boundary_layer/mym_simeq_matrix_prod.f90
 [2475/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/boundary_layer/excfnl_cci.f90
 [2476/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/boundary_layer/c_bm_bdy_mod.f90
-Analysis found nothing in the file.
 [2477/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/boundary_layer/heat_con.f90
 [2478/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/boundary_layer/dust_srce.f90
 Analysis found nothing in the file.
@@ -3427,7 +3408,6 @@ Analysis found nothing in the file.
 [2550/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/rfvvg.f90
 Analysis found nothing in the file.
 [2551/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/ac-ac1a.f90
-Analysis found nothing in the file.
 [2552/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/ac_init.f90
 Analysis found nothing in the file.
 [2553/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/fieldstats.f90
@@ -3480,7 +3460,6 @@ Analysis found nothing in the file.
 [2578/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/rfcsg.f90
 Analysis found nothing in the file.
 [2579/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/ac_stash.f90
-Analysis found nothing in the file.
 [2580/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/iau.f90
 [2581/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/ac-ac0a.f90
 [2582/2836][ok] /home/rupert/proj/isenes2/N512_endgame_ppsrc/UM/atmosphere/AC_assimilation/iau_mod.f90
@@ -3801,26 +3780,27 @@ Analysis found nothing in the file.
 Creating stats: done
 Total number of ...
     files                       2836
-    files successfully parsed   1881
+    files successfully parsed   1902
     files failed to parse       0
-    files that are empty        955
+    files that are empty        934
 
     modules                     627
     modules with subroutines    345
     modules without subroutines 282
 
-    subroutines                 1863
-    subroutines outside modules 1208
+    subroutines                 2559
+    subroutines outside modules 1904
     subroutines inside modules  655
 
-    statements                  888760
-    comments                    516324
+    statements                  888849
+    comments                    516413
     declarations                161280
     code statements             211151
 
-    Comment 516324 Integer 101804 Assignment 66516 Real 28271 Logical 22880 EndIfThen 19628 IfThen 19628 Do 18978 EndDo 18978 Call 14043 Use 9096 Write 6641 If 5666 Else 5085 Character 4707 Common 3582 Allocate 2466 Implicit 2463 ElseIf 2284 EndSubroutine 1904 Subroutine 1904 Return 1811 Goto 1448 Parameter 1413 Deallocate 1249 Data 1173 Type 1153 PointerAssignment 1091 Case 880 Namelist 770 Module 627 EndModule 626 Read0 371 Contains 358 Continue 312 Nullify 257 EndSelect 211 Select 211 Equivalence 204 Exit 191 Print 167 Format 128 Function 121 EndFunction 121 External 116 Close 110 Where 79 EndWhere 79 Open 79 EndType 66 Type 66 Cycle 62 Public 48 Save 33 Where 30 EndInterface 29 Interface 29 Rewind 28 ModuleProcedure 25 ElseWhere 23 Backspace 20 Private 19 Inquire 19 EndProgram 17 Program 17 Sequence 13 Line 5 DoublePrecision 2 Dimension 2 BlockData 1 EndBlockData 1 Flush 1 
+    Comment 516413 Integer 101804 Assignment 66516 Real 28271 Logical 22880 EndIfThen 19628 IfThen 19628 Do 18978 EndDo 18978 Call 14043 Use 9096 Write 6641 If 5666 Else 5085 Character 4707 Common 3582 Allocate 2466 Implicit 2463 ElseIf 2284 EndSubroutine 1904 Subroutine 1904 Return 1811 Goto 1448 Parameter 1413 Deallocate 1249 Data 1173 Type 1153 PointerAssignment 1091 Case 880 Namelist 770 Module 627 EndModule 626 Read0 371 Contains 358 Continue 312 Nullify 257 EndSelect 211 Select 211 Equivalence 204 Exit 191 Print 167 Format 128 EndFunction 121 Function 121 External 116 Close 110 EndWhere 79 Where 79 Open 79 Type 66 EndType 66 Cycle 62 Public 48 Save 33 Where 30 EndInterface 29 Interface 29 Rewind 28 ModuleProcedure 25 ElseWhere 23 Backspace 20 Inquire 19 Private 19 EndProgram 17 Program 17 Sequence 13 Line 5 Dimension 2 DoublePrecision 2 EndBlockData 1 BlockData 1 Flush 1 
 linking: done
 digraph G {
+glue_rad -> dr_hook;
 glue_rad -> init_swdiag_logic;
 glue_rad -> init_lwdiag_logic;
 glue_rad -> set_lwdiag_logic;
@@ -3834,6 +3814,8 @@ glue_rad -> solinc;
 glue_rad -> ftsa;
 glue_rad -> tile_albedo;
 glue_rad -> prelim_swrad;
+glue_rad -> segments_mod_seg_meta;
+glue_rad -> segments_mod_segments;
 glue_rad -> r2_set_rad_dim;
 glue_rad -> r2_swrad3z;
 glue_rad -> fill_missing_data_sw;
@@ -3850,12 +3832,35 @@ glue_rad -> fill_missing_data_isccp;
 glue_rad -> diagnostics_lw;
 glue_rad -> deallocate_swdiag_ext;
 glue_rad -> deallocate_lwdiag;
+init_swdiag_logic -> dr_hook;
+init_lwdiag_logic -> dr_hook;
+set_lwdiag_logic -> dr_hook;
+set_swdiag_logic -> dr_hook;
+tilepts -> dr_hook;
+timer -> dr_hook;
 timer -> timer_output;
+timer_output -> dr_hook;
+allocate_sw_diag -> dr_hook;
+solpos -> dr_hook;
 solpos -> orbprm;
+orbprm -> dr_hook;
+solang -> dr_hook;
+solinc -> dr_hook;
+ftsa -> dr_hook;
+tile_albedo -> dr_hook;
 tile_albedo -> albpft;
 tile_albedo -> albsnow;
 tile_albedo -> canyonalb;
+albpft -> dr_hook;
+albsnow -> dr_hook;
+canyonalb -> dr_hook;
 canyonalb -> matinv;
+matinv -> dr_hook;
+prelim_swrad -> dr_hook;
+segments_mod_seg_meta -> dr_hook;
+segments_mod_segments -> dr_hook;
+r2_set_rad_dim -> dr_hook;
+r2_swrad3z -> dr_hook;
 r2_swrad3z -> r2_set_690nm_weight;
 r2_swrad3z -> r2_set_uv_weight;
 r2_swrad3z -> r2_set_option;
@@ -3869,11 +3874,29 @@ r2_swrad3z -> r2_set_cloud_field;
 r2_swrad3z -> r2_cloud_level_diag;
 r2_swrad3z -> mcica_order;
 r2_swrad3z -> radiance_calc;
+r2_set_690nm_weight -> dr_hook;
+r2_set_uv_weight -> dr_hook;
+r2_set_option -> dr_hook;
+r2_set_surface_field_sw -> dr_hook;
+r2_set_gas_mix_ratio -> dr_hook;
+r2_set_thermodynamic -> dr_hook;
+r2_set_aerosol_field -> dr_hook;
 r2_set_aerosol_field -> r2_set_aero_clim_hadcm3;
+r2_set_aero_clim_hadcm3 -> dr_hook;
+ukca_radaer_set_aerosol_field -> dr_hook;
+r2_set_cloud_parametrization -> dr_hook;
+r2_set_cloud_field -> dr_hook;
 r2_set_cloud_field -> lsp_focwwil;
 r2_set_cloud_field -> r2_re_mrf_umist;
+lsp_focwwil -> dr_hook;
+r2_re_mrf_umist -> dr_hook;
 r2_re_mrf_umist -> r2_calc_total_cloud_cover;
 r2_re_mrf_umist -> r2_column_droplet_conc;
+r2_calc_total_cloud_cover -> dr_hook;
+r2_column_droplet_conc -> dr_hook;
+r2_cloud_level_diag -> dr_hook;
+mcica_order -> dr_hook;
+radiance_calc -> dr_hook;
 radiance_calc -> set_truncation;
 radiance_calc -> sol_scat_cos;
 radiance_calc -> calc_cg_coeff;
@@ -3908,38 +3931,99 @@ radiance_calc -> solve_band_random_overlap;
 radiance_calc -> solve_band_k_eqv;
 radiance_calc -> solve_band_ses;
 radiance_calc -> adjust_ir_radiance;
+set_truncation -> dr_hook;
+sol_scat_cos -> dr_hook;
+calc_cg_coeff -> dr_hook;
+calc_uplm_zero -> dr_hook;
+calc_uplm_sol -> dr_hook;
+calc_brdf -> dr_hook;
 calc_brdf -> eval_uplm;
+eval_uplm -> dr_hook;
+diff_albedo_basis -> dr_hook;
+set_rad_layer -> dr_hook;
+set_moist_aerosol_properties -> dr_hook;
 set_moist_aerosol_properties -> qsat_wat;
+qsat_wat -> dr_hook;
+set_cloud_pointer -> dr_hook;
+set_cloud_geometry -> dr_hook;
+aggregate_cloud -> dr_hook;
+overlap_coupled -> dr_hook;
+cloud_maxcs_split -> dr_hook;
 cloud_maxcs_split -> shell_sort;
+shell_sort -> dr_hook;
+calculate_density -> dr_hook;
+inter_pt -> dr_hook;
+check_phf_term -> dr_hook;
+compute_all_aod -> dr_hook;
 compute_all_aod -> compute_aod;
+compute_aod -> dr_hook;
+ukca_radaer_prepare -> dr_hook;
+ukca_radaer_band_average -> dr_hook;
+ukca_radaer_compute_aod -> dr_hook;
+scale_absorb -> dr_hook;
+scale_absorb -> rtor_v;
+rtor_v -> dr_hook;
+ses_rescale_contm -> dr_hook;
+rescale_continuum -> dr_hook;
+rescale_continuum -> rtor_v;
+grey_opt_prop -> dr_hook;
 grey_opt_prop -> opt_prop_aerosol;
 grey_opt_prop -> opt_prop_ukca_aerosol;
 grey_opt_prop -> opt_prop_water_cloud;
 grey_opt_prop -> opt_prop_ice_cloud;
+opt_prop_aerosol -> dr_hook;
+opt_prop_ukca_aerosol -> dr_hook;
+opt_prop_water_cloud -> dr_hook;
+opt_prop_ice_cloud -> dr_hook;
+rescale_phase_fnc -> dr_hook;
+inter_k -> dr_hook;
+diff_planck_source -> dr_hook;
+solve_band_without_gas -> dr_hook;
 solve_band_without_gas -> monochromatic_radiance;
 solve_band_without_gas -> augment_radiance;
 solve_band_without_gas -> augment_tiled_radiance;
+monochromatic_radiance -> dr_hook;
 monochromatic_radiance -> single_scattering_all;
 monochromatic_radiance -> rescale_tau_omega;
 monochromatic_radiance -> monochromatic_radiance_tseq;
 monochromatic_radiance -> monochromatic_radiance_sph;
 monochromatic_radiance -> gauss_angle;
+single_scattering_all -> dr_hook;
 single_scattering_all -> single_scattering;
+single_scattering -> dr_hook;
+rescale_tau_omega -> dr_hook;
+monochromatic_radiance_tseq -> dr_hook;
 monochromatic_radiance_tseq -> copy_clr_full;
 monochromatic_radiance_tseq -> two_stream;
 monochromatic_radiance_tseq -> mcica_column;
 monochromatic_radiance_tseq -> mix_column;
 monochromatic_radiance_tseq -> triple_column;
 monochromatic_radiance_tseq -> calc_flux_ipa;
+copy_clr_full -> dr_hook;
+two_stream -> dr_hook;
 two_stream -> two_coeff;
 two_stream -> solar_source;
 two_stream -> ir_source;
 two_stream -> set_matrix_pentadiagonal;
 two_stream -> band_solver;
 two_stream -> solver_homogen_direct;
+two_coeff -> dr_hook;
 two_coeff -> two_coeff_basic;
+two_coeff -> sqrt_v;
 two_coeff -> solar_coefficient_basic;
 two_coeff -> trans_source_coeff;
+two_coeff_basic -> dr_hook;
+sqrt_v -> dr_hook;
+solar_coefficient_basic -> dr_hook;
+trans_source_coeff -> dr_hook;
+trans_source_coeff -> exp_v;
+exp_v -> dr_hook;
+solar_source -> dr_hook;
+ir_source -> dr_hook;
+set_matrix_pentadiagonal -> dr_hook;
+band_solver -> dr_hook;
+solver_homogen_direct -> dr_hook;
+mcica_column -> dr_hook;
 mcica_column -> two_coeff;
 mcica_column -> ir_source;
 mcica_column -> clear_supplement;
@@ -3947,10 +4031,12 @@ mcica_column -> solar_source;
 mcica_column -> solver_homogen_direct;
 mcica_column -> set_matrix_pentadiagonal;
 mcica_column -> band_solver;
+clear_supplement -> dr_hook;
 clear_supplement -> solar_source;
 clear_supplement -> set_matrix_pentadiagonal;
 clear_supplement -> band_solver;
 clear_supplement -> solver_homogen_direct;
+mix_column -> dr_hook;
 mix_column -> two_coeff;
 mix_column -> ir_source;
 mix_column -> two_coeff_cloud;
@@ -3959,7 +4045,13 @@ mix_column -> mix_app_scat;
 mix_column -> solver_mix_direct;
 mix_column -> solver_mix_direct_hogan;
 mix_column -> clear_supplement;
+two_coeff_cloud -> dr_hook;
 two_coeff_cloud -> two_coeff;
+mixed_solar_source -> dr_hook;
+mix_app_scat -> dr_hook;
+solver_mix_direct -> dr_hook;
+solver_mix_direct_hogan -> dr_hook;
+triple_column -> dr_hook;
 triple_column -> two_coeff_region;
 triple_column -> two_coeff_region_fast_lw;
 triple_column -> ir_source;
@@ -3968,14 +4060,26 @@ triple_column -> solver_triple;
 triple_column -> solver_triple_hogan;
 triple_column -> solver_triple_app_scat;
 triple_column -> clear_supplement;
+two_coeff_region -> dr_hook;
 two_coeff_region -> two_coeff;
+two_coeff_region_fast_lw -> dr_hook;
 two_coeff_region_fast_lw -> two_coeff_fast_lw;
+two_coeff_fast_lw -> dr_hook;
+two_coeff_fast_lw -> exp_v;
+triple_solar_source -> dr_hook;
+solver_triple -> dr_hook;
+solver_triple_hogan -> dr_hook;
+solver_triple_app_scat -> dr_hook;
+calc_flux_ipa -> dr_hook;
 calc_flux_ipa -> two_stream;
 calc_flux_ipa -> copy_clr_full;
+monochromatic_radiance_sph -> dr_hook;
 monochromatic_radiance_sph -> copy_clr_full;
 monochromatic_radiance_sph -> copy_clr_sol;
 monochromatic_radiance_sph -> sph_solver;
 monochromatic_radiance_sph -> calc_radiance_ipa;
+copy_clr_sol -> dr_hook;
+sph_solver -> dr_hook;
 sph_solver -> eval_uplm;
 sph_solver -> hemi_sph_integ;
 sph_solver -> cg_kappa_ms;
@@ -3983,26 +4087,49 @@ sph_solver -> build_sph_matrix;
 sph_solver -> sph_matrix_solver;
 sph_solver -> increment_rad_cf;
 sph_solver -> single_scat_sol;
+hemi_sph_integ -> dr_hook;
+cg_kappa_ms -> dr_hook;
+build_sph_matrix -> dr_hook;
 build_sph_matrix -> eig_sys;
 build_sph_matrix -> layer_part_integ;
 build_sph_matrix -> set_level_weights;
 build_sph_matrix -> set_dirn_weights;
 build_sph_matrix -> calc_surf_rad;
 build_sph_matrix -> calc_top_rad;
+eig_sys -> dr_hook;
 eig_sys -> eigenvalue_tri;
+eigenvalue_tri -> dr_hook;
+layer_part_integ -> dr_hook;
+set_level_weights -> dr_hook;
+set_dirn_weights -> dr_hook;
+calc_surf_rad -> dr_hook;
+calc_top_rad -> dr_hook;
+sph_matrix_solver -> dr_hook;
+increment_rad_cf -> dr_hook;
+single_scat_sol -> dr_hook;
+calc_radiance_ipa -> dr_hook;
 calc_radiance_ipa -> sph_solver;
+gauss_angle -> dr_hook;
 gauss_angle -> monochromatic_ir_radiance;
+monochromatic_ir_radiance -> dr_hook;
+augment_radiance -> dr_hook;
+augment_tiled_radiance -> dr_hook;
+solve_band_one_gas -> dr_hook;
 solve_band_one_gas -> scale_absorb;
 solve_band_one_gas -> gas_optical_properties;
 solve_band_one_gas -> monochromatic_radiance;
 solve_band_one_gas -> augment_radiance;
 solve_band_one_gas -> augment_tiled_radiance;
+gas_optical_properties -> dr_hook;
+solve_band_random_overlap -> dr_hook;
 solve_band_random_overlap -> scale_absorb;
 solve_band_random_overlap -> gas_optical_properties;
 solve_band_random_overlap -> monochromatic_radiance;
 solve_band_random_overlap -> augment_radiance;
 solve_band_random_overlap -> augment_tiled_radiance;
+solve_band_k_eqv -> dr_hook;
 solve_band_k_eqv -> scale_absorb;
+solve_band_k_eqv -> exp_v;
 solve_band_k_eqv -> monochromatic_gas_flux;
 solve_band_k_eqv -> opt_prop_water_cloud;
 solve_band_k_eqv -> opt_prop_ice_cloud;
@@ -4010,18 +4137,49 @@ solve_band_k_eqv -> gas_optical_properties;
 solve_band_k_eqv -> monochromatic_radiance;
 solve_band_k_eqv -> augment_radiance;
 solve_band_k_eqv -> augment_tiled_radiance;
+monochromatic_gas_flux -> dr_hook;
+monochromatic_gas_flux -> exp_v;
+solve_band_ses -> dr_hook;
 solve_band_ses -> monochromatic_radiance;
 solve_band_ses -> augment_radiance;
 solve_band_ses -> augment_tiled_radiance;
+adjust_ir_radiance -> dr_hook;
+fill_missing_data_sw -> dr_hook;
 fill_missing_data_sw -> rad3d_inp;
+rad3d_inp -> dr_hook;
 rad3d_inp -> swap_bounds;
 rad3d_inp -> set_external_halos;
 rad3d_inp -> interp_field;
+swap_bounds -> dr_hook;
+swap_bounds -> swap_bounds_ew;
+swap_bounds -> swap_bounds_ns;
+swap_bounds_ew -> dr_hook;
+swap_bounds_ew -> swap_bounds_ew_serial;
+swap_bounds_ew -> swap_bounds_ew_h1;
+swap_bounds_ew_serial -> dr_hook;
+swap_bounds_ew_h1 -> dr_hook;
+swap_bounds_ns -> dr_hook;
+set_external_halos -> dr_hook;
+interp_field -> dr_hook;
+pc2_homog_plus_turb -> dr_hook;
 pc2_homog_plus_turb -> qsat_wat_mix;
 pc2_homog_plus_turb -> pc2_total_cf;
+qsat_wat_mix -> dr_hook;
+qsat_wat_mix -> oneover_v;
+oneover_v -> dr_hook;
+pc2_total_cf -> dr_hook;
+flux_diag -> dr_hook;
+diagnostics_sw -> dr_hook;
 diagnostics_sw -> copydiag_3d;
 diagnostics_sw -> copydiag;
+copydiag_3d -> dr_hook;
 copydiag_3d -> set_levels_list;
+set_levels_list -> dr_hook;
+copydiag -> dr_hook;
+deallocate_swdiag -> dr_hook;
+allocate_lw_diag -> dr_hook;
+prelim_lwrad -> dr_hook;
+r2_lwrad3z -> dr_hook;
 r2_lwrad3z -> r2_set_option;
 r2_lwrad3z -> r2_set_gas_mix_ratio;
 r2_lwrad3z -> r2_set_thermodynamic;
@@ -4033,11 +4191,20 @@ r2_lwrad3z -> mcica_order;
 r2_lwrad3z -> r2_set_surface_field_lw;
 r2_lwrad3z -> radiance_calc;
 r2_lwrad3z -> r2_calc_total_cloud_cover;
+r2_set_surface_field_lw -> dr_hook;
+fill_missing_data_lw -> dr_hook;
 fill_missing_data_lw -> rad3d_inp;
+isccp -> dr_hook;
 isccp -> r2_set_thermodynamic;
 isccp -> isccp_cloudtypes_fld;
+isccp_cloudtypes_fld -> dr_hook;
 isccp_cloudtypes_fld -> isccp_cloud_types;
+isccp_cloud_types -> dr_hook;
+fill_missing_data_isccp -> dr_hook;
 fill_missing_data_isccp -> rad3d_inp;
+diagnostics_lw -> dr_hook;
 diagnostics_lw -> copydiag_3d;
 diagnostics_lw -> copydiag;
+deallocate_swdiag_ext -> dr_hook;
+deallocate_lwdiag -> dr_hook;
 }
