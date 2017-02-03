@@ -353,7 +353,6 @@ class File(object):
             from fparser import parsefortran
             from fparser import api as fpapi
             fparser.parsefortran.FortranParser.cache.clear()
-            fparser.logging.disable('CRITICAL')
             self._ast = fpapi.parse(file_path, ignore_comments = False,
                               analyze = False)
             if self._ast == None:
