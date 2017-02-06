@@ -464,7 +464,7 @@ class Subroutine(object):
 
     def call_tree(self):
         unique_names=[]
-        self.name+";"
+        print self.name+";"
         for call in self.calls:
             if call.link is not None:
                 if call.link.name not in unique_names:
